@@ -18,3 +18,8 @@ if __name__ == '__main__':
     for filho in hanibal.filhos:
         print(f'Filhos de {hanibal.nome}: ', end='')
         print(filho.nome)
+    hanibal.sobrenome = 'Padilha'
+    print(hanibal.__dict__)
+    del hanibal.filhos
+    print(hanibal.__dict__)
+    print(gabriel.__dict__)
